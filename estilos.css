@@ -10,3 +10,7 @@ h1 {
 .card {
 	border-style: none;
 }
+
+h2 {
+    margin-bottom: 16px;
+}
