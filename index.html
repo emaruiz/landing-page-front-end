@@ -48,14 +48,72 @@
 
             <div class="container">
                 <h2>Recibe la información del curso y comienza a mejorar tus finanzas</h2>
-                <form>
-                    <div class="input-group w-50 mx-auto">
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo">
-                        <button type="button" class="btn btn-primary">Recibe la información</button>
+                <form class="needs-validation" novalidate>
+                    <div class="input-group w-50 mx-auto position-relative">
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+                        <button type="submit" class="btn btn-primary rounded-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
+                        <div class="valid-tooltip">Formato de correo valido</div>
+                        <div class="invalid-tooltip">Formato de correo invalido</div>
+                    </div>
+                    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <p></p>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button id="modal-boton" type="button" class="btn btn-primary">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
+
+        <script>
+            const aForm = document.querySelector('.needs-validation')
+            function preventSubmissionAndValidate(event) {
+                event.preventDefault()
+                if (!aForm.checkValidity()) {
+                    event.stopPropagation()
+                }
+                aForm.classList.add('was-validated')
+            }
+            aForm.addEventListener('submit', preventSubmissionAndValidate, false)
+            
+
+            const modal = document.getElementById('staticBackdrop')
+            function updateContentModal(event) {
+                const modalTitle = modal.querySelector('.modal-title')
+                const modalParagraph = modal.querySelector('.modal-body p')
+                if(aForm.checkValidity()){
+                    modalTitle.innerHTML = 'Correo valido'
+                    modalParagraph.innerHTML = 'Listo. Se envio un mensaje con la informacion.'
+                }else{
+                    modalTitle.innerHTML = 'Correo invalido'
+                    modalParagraph.innerHTML = 'Debes ingresar un correo valido para poder enviarte la informacion.'
+                }
+            }
+            modal.addEventListener('show.bs.modal', updateContentModal)
+
+
+            const aModal = new bootstrap.Modal(modal)
+            const modalButton = document.getElementById('modal-boton')
+            function returnToTheForm(event) {
+                if (aForm.checkValidity()) {
+                    const inputEmail = document.getElementById("email")
+                    inputEmail.value = ''
+                    window.location.reload()
+                }else{
+                    aModal.hide()
+                }
+            }
+            modalButton.addEventListener("click", returnToTheForm)
+        </script>
     </body>
 
 </html>

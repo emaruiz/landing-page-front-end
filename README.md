@@ -1,6 +1,6 @@
 # Landing page
 
-Landing page realizada para una cliente ficticia. Esta hecha en HTML.
+Landing page realizada para una cliente ficticia. Esta hecha en HTML, CSS, JavaScript y Bootstrap.
 
 ## Requisitos para visualizar
 
