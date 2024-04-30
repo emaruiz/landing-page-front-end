@@ -22,12 +22,22 @@ h2 {
     margin-bottom: 16px;
 }
 
+form {
+    margin-bottom: 35px;
+}
+
 .input-group {
     width: 50%;
 }
 
-form {
-    margin-bottom: 35px;
+#email {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#boton-info {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 /* Tablet */
@@ -38,6 +48,31 @@ form {
 } 
 
 /* Celular */
-/* @media (max-width: 768px) {
-    
-} */
+@media (max-width: 768px) {
+    .card-group {
+        flex-direction: column;
+    }
+
+    .card-img-top {
+        width: 15%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    #boton-info {
+        border-radius: 6px;
+    }
+
+    #msj-correo-valido, #msj-correo-invalido {
+        display: none;
+    }
+}

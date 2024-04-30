@@ -51,9 +51,9 @@
                 <form class="needs-validation" novalidate>
                     <div class="input-group mx-auto position-relative">
                         <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
-                        <button type="submit" class="btn btn-primary rounded-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
-                        <div class="valid-tooltip">Formato de correo valido</div>
-                        <div class="invalid-tooltip">Formato de correo invalido</div>
+                        <button type="submit" class="btn btn-primary" id="boton-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
+                        <div class="valid-tooltip rounded" id="msj-correo-valido">Formato de correo valido</div>
+                        <div class="invalid-tooltip" id="msj-correo-invalido">Formato de correo invalido</div>
                     </div>
                     <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
                         <div class="modal-dialog">
