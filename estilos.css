@@ -1,6 +1,12 @@
 body {
     text-align: center;
     height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 h1 {
@@ -18,8 +24,13 @@ h1 {
     margin-right: auto;
 }
 
+p {
+    font-size: 1.063rem;
+}
+
 h2 {
     margin-bottom: 16px;
+    font-size: 1.875rem;
 }
 
 form {
@@ -40,8 +51,16 @@ form {
     border-bottom-right-radius: 6px;
 }
 
+#boton-info, #modal-boton {
+    font-weight: 500;
+}
+
 /* Tablet */
 @media (max-width: 1200px) {
+    h2 {
+        font-size: calc(1.200rem + .9vw);
+    }
+
     .input-group {
         width: 75%;
     }
