@@ -22,19 +22,19 @@
             <h1>¿Querés mejorar las finanzas de tu emprendimiento?</h1>
             
             <div class="card-group mb-4">
-                <div class="card">
+                <div class="card" id="card-ingresos">
                     <img src="imagenes/ingresos.svg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">¿Tu emprendimiento no genera los ingresos que esperabas?</h5>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="card-decision">
                     <img src="imagenes/decision.svg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">¿No sabes que estrategia económica usar cuando aparece alguna situación?</h5>
                     </div>
                   </div>
-                <div class="card">
+                <div class="card" id="card-prediccion">
                     <img src="imagenes/prediccion.svg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">¿No podes anticipar los posibles escenarios futuros que afecten al emprendimiento?</h5>
@@ -50,12 +50,12 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container rounded" id="cta">
                 <h2>Recibe la información del curso y comienza a mejorar tus finanzas</h2>
                 <form class="needs-validation" novalidate>
                     <div class="input-group mx-auto position-relative">
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
-                        <button type="submit" class="btn btn-primary" id="boton-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
+                        <input type="email" class="form-control border-2" id="email" placeholder="Ingrese su correo" required>
+                        <button type="submit" class="btn btn-warning" id="boton-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
                         <div class="valid-tooltip rounded" id="msj-correo-valido">Formato de correo valido</div>
                         <div class="invalid-tooltip" id="msj-correo-invalido">Formato de correo invalido</div>
                     </div>
@@ -69,7 +69,7 @@
                                     <p></p>
                                 </div>
                                 <div class="modal-footer justify-content-center">
-                                    <button id="modal-boton" type="button" class="btn btn-primary">Aceptar</button>
+                                    <button type="button" class="btn btn-warning" id="modal-boton">Aceptar</button>
                                 </div>
                             </div>
                         </div>
