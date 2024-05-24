@@ -18,66 +18,113 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 
-    <body class="d-flex">
-        <div class="container my-auto">
-            <h1>¿Querés mejorar las finanzas de tu emprendimiento?</h1>
-            
-            <div class="card-group mb-4">
-                <div class="card" id="card-ingresos">
-                    <img src="imagenes/ingresos.svg" class="card-img-top" alt="pocos ingresos">
-                    <div class="card-body">
-                        <h5 class="card-title">¿Tu emprendimiento no genera los ingresos que esperabas?</h5>
+    <body>
+        <header class="d-flex" id="primer-seccion">
+            <div class="container my-auto">
+                <h1>¿Querés mejorar las finanzas de tu emprendimiento?</h1>
+                
+                <div class="card-group mb-4">
+                    <div class="card" id="card-ingresos">
+                        <img src="imagenes/ingresos.svg" class="card-img-top" alt="pocos ingresos">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Tu emprendimiento no genera los ingresos que esperabas?</h5>
+                        </div>
+                    </div>
+                    <div class="card" id="card-decision">
+                        <img src="imagenes/decision.svg" class="card-img-top" alt="no saber que decision tomar">
+                        <div class="card-body">
+                            <h5 class="card-title">¿No sabes que estrategia económica usar cuando aparece alguna situación?</h5>
+                        </div>
+                      </div>
+                    <div class="card" id="card-prediccion">
+                        <img src="imagenes/prediccion.svg" class="card-img-top" alt="no poder predecir">
+                        <div class="card-body">
+                            <h5 class="card-title">¿No podes anticipar los posibles escenarios futuros que afecten al emprendimiento?</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="card" id="card-decision">
-                    <img src="imagenes/decision.svg" class="card-img-top" alt="no saber que decision tomar">
-                    <div class="card-body">
-                        <h5 class="card-title">¿No sabes que estrategia económica usar cuando aparece alguna situación?</h5>
-                    </div>
-                  </div>
-                <div class="card" id="card-prediccion">
-                    <img src="imagenes/prediccion.svg" class="card-img-top" alt="no poder predecir">
-                    <div class="card-body">
-                        <h5 class="card-title">¿No podes anticipar los posibles escenarios futuros que afecten al emprendimiento?</h5>
+    
+                <div class="container mb-4">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-11 col-xl-10">
+                            <p>Soy Caroline Sada y seguro me conoces por compartir consejos de finanzas en mis redes sociales. Los problemas antes mencionados los he resuelto en el día a día como analista financiera. Por eso elaboré un curso virtual donde comparto mis conocimientos.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="container mb-4">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-11 col-xl-10">
-                        <p>Soy Caroline Sada y seguro me conoces por compartir consejos de finanzas en mis redes sociales. Los problemas antes mencionados los he resuelto en el día a día como analista financiera. Por eso elaboré un curso virtual donde comparto mis conocimientos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container rounded" id="cta">
-                <h2>Recibe la información del curso y comienza a mejorar tus finanzas</h2>
-                <form class="needs-validation" novalidate>
-                    <div class="input-group mx-auto position-relative">
-                        <input type="email" class="form-control border-2" id="email" placeholder="Ingrese su correo" required>
-                        <button type="submit" class="btn btn-warning" id="boton-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
-                        <div class="valid-tooltip rounded" id="msj-correo-valido">Formato de correo valido</div>
-                        <div class="invalid-tooltip" id="msj-correo-invalido">Formato de correo invalido</div>
-                    </div>
-                    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header justify-content-center">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                </div>
-                                <div class="modal-body">
-                                    <p></p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-warning" id="modal-boton">Aceptar</button>
+    
+                <div class="container rounded" id="cta">
+                    <h2>Recibe la información del curso y comienza a mejorar tus finanzas</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mx-auto position-relative">
+                            <input type="email" class="form-control border-2" id="email" placeholder="Ingrese su correo" required>
+                            <button type="submit" class="btn btn-warning" id="boton-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recibe la información</button>
+                            <div class="valid-tooltip rounded" id="msj-correo-valido">Formato de correo valido</div>
+                            <div class="invalid-tooltip" id="msj-correo-invalido">Formato de correo invalido</div>
+                        </div>
+                        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-warning" id="modal-boton">Aceptar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
+        </header>
+
+        <section class="container">
+            <h3>Mira lo que podés aprender en el curso</h3>
+            
+            <div class="card-group mb-4">
+                <div class="card">
+                    <svg class="card-img-top" fill="#548FBD" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128px" height="128px" viewBox="-39.97 -39.97 479.61 479.61" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M393.674,131.298l-29.509-29.51c-0.004-0.004-0.006-0.008-0.01-0.011s-0.008-0.006-0.011-0.009l-29.51-29.511 c-2.343-2.344-5.522-3.661-8.839-3.661s-6.495,1.317-8.839,3.661l-14.59,14.59V12.5c0-6.903-5.598-12.5-12.5-12.5H14.835 c-6.903,0-12.5,5.597-12.5,12.5v374.67c0,6.903,5.597,12.5,12.5,12.5h275.032c6.902,0,12.5-5.597,12.5-12.5V240.279l91.307-91.304 C398.556,144.094,398.556,136.18,393.674,131.298z M277.367,374.67H27.335V25h250.032v86.847L174.073,215.139 c-1.726,1.728-2.908,3.922-3.402,6.312l-15.359,74.4c-0.851,4.121,0.429,8.393,3.403,11.366c2.368,2.368,5.558,3.661,8.839,3.661 c0.841,0,1.688-0.085,2.527-0.258l74.396-15.362c2.393-0.493,4.586-1.677,6.312-3.403l26.577-26.576V374.67z M190.468,249.21 l26.252,26.253l-33.082,6.831L190.468,249.21z M241.951,265.339l-41.36-41.36L325.796,98.774l11.842,11.843l-76.36,76.362 c-4.883,4.882-4.883,12.796,0,17.678c2.439,2.439,5.64,3.661,8.839,3.661s6.397-1.222,8.839-3.661l76.361-76.361l11.842,11.842 L241.951,265.339z"></path> </g> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Analizar la situación financiera de tu negocio</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg class="card-img-top" fill="#548FBD" height="128px" width="128px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-43.5 -43.5 522.00 522.00" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M74.575,281.775c14.73,7.672,43.244,12.17,44.508,12.365c0.342,0.053,2.078,0.662,2.078,2.246v21.426 c0,6.164,5.145,11.18,11.467,11.18h10.234c6.322,0,11.467-5.016,11.467-11.18v-22.547c0-2.107,1.559-2.295,1.877-2.371 c32.508-7.299,52.537-31.088,52.537-60.953c0-30.686-17.033-50.504-56.945-66.274c-30.361-12.17-39.143-19.533-39.143-32.826 c0-10.639,8.061-23.061,30.771-23.061c20.09,0,35.5,7.918,35.639,7.99c1.625,0.865,3.438,1.324,5.238,1.324 c4.402,0,8.289-2.66,9.902-6.777l5.518-14.113c1.922-5.137-0.996-9.621-4.713-11.225c-12.367-5.387-36.543-9.553-36.793-9.596 c-0.389-0.066-1.74-0.357-1.74-1.941l-0.08-20.465c0-6.166-5.145-11.182-11.467-11.182h-9.895c-6.318,0-11.461,5.016-11.461,11.184 l0.023,21.52c0,1.646-1.785,2.363-2.438,2.52c-30.52,7.268-49.59,29.621-49.59,57.822c0,35.15,29.055,51.035,60.428,62.957 c25.082,9.848,35.313,19.832,35.313,34.475c0,15.938-14.494,27.068-35.246,27.068c-17.727,0-41.717-11.236-41.957-11.35 c-1.535-0.729-3.16-1.098-4.832-1.098c-4.57,0-8.547,2.764-10.133,7.037l-5.271,14.268 C67.999,275.527,70.883,279.852,74.575,281.775z"></path> <path d="M413.351,86.175L383.758,13.05C380.501,5.001,373.721,0,366.067,0c-6.06,0-11.709,3.037-15.908,8.552L302.37,71.314 c-4.73,6.212-5.933,13.416-3.299,19.764c2.635,6.349,8.585,10.585,16.326,11.623l18.994,2.543 c-18.828,124.368-71.874,210.619-157.892,256.581c-68.467,36.583-133.946,33.103-135.27,33.024 c-10.989-0.76-20.532,7.578-21.287,18.588c-0.755,11.02,7.566,20.565,18.586,21.32c0.592,0.041,3.775,0.239,9.093,0.239 c22.339,0,82.324-3.501,145.883-36.914c46.309-24.344,84.916-59.517,114.752-104.541c32.799-49.498,54.867-110.967,65.764-182.993 l18.505,2.478c1.131,0.152,2.259,0.229,3.354,0.229h0.001c6.79,0,12.674-2.949,16.141-8.093 C415.6,99.852,416.086,92.931,413.351,86.175z"></path> </g> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Incrementar tus ingresos a través de planes financieros de inversión</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg class="card-img-top" fill="#548FBD" width="128px" height="128px" viewBox="-12.29 -12.29 147.46 147.46" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 113.01 122.88" xml:space="preserve" stroke="#548FBD" stroke-width="1.2288000000000001"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M44.13,102.06c-1.14,0.03-2.14-0.81-2.3-1.96c-0.17-1.2,0.64-2.31,1.82-2.54c-1.3-7.37-4.85-11.43-8.6-15.72 c-2.92-3.34-5.95-6.81-8.34-11.92c-2.35-5.03-3.64-10.23-3.6-15.63c0.05-5.4,1.42-10.96,4.4-16.71c0.02-0.04,0.04-0.07,0.06-0.11 l0,0c3.91-6.62,9.38-11.04,15.47-13.52c5.11-2.09,10.66-2.8,16.1-2.3c5.42,0.5,10.73,2.2,15.37,4.94 c5.9,3.49,10.75,8.67,13.42,15.21c1.44,3.54,2.42,7.49,2.54,11.82c0.12,4.31-0.62,8.96-2.61,13.88 c-2.66,6.59-6.18,10.68-9.47,14.51c-3.03,3.53-5.85,6.81-7.42,11.84c0.89,0.21,1.59,0.94,1.73,1.9c0.17,1.24-0.7,2.39-1.94,2.56 l-0.77,0.11c-0.14,1.09-0.23,2.26-0.27,3.51l0.25-0.04c1.24-0.17,2.39,0.7,2.56,1.94c0.17,1.24-0.7,2.39-1.94,2.56l-0.78,0.11 c0.01,0.15,0.02,0.3,0.03,0.45l0,0c0.07,0.88,0.08,1.73,0.03,2.54l0.13-0.02c1.25-0.15,2.38,0.74,2.54,1.98 c0.15,1.25-0.74,2.38-1.98,2.54l-1.68,0.21c-1.2,3.11-3.34,5.48-5.87,6.94c-1.74,1.01-3.67,1.59-5.61,1.71 c-1.97,0.12-3.96-0.25-5.78-1.13c-2.08-1.02-3.94-2.71-5.29-5.14c-0.65-0.33-1.13-0.97-1.23-1.75c-0.04-0.31-0.01-0.61,0.07-0.89 c-0.39-1.16-0.68-2.43-0.87-3.83l-0.07,0.01c-1.24,0.17-2.39-0.7-2.56-1.94c-0.17-1.24,0.7-2.39,1.94-2.56l0.54-0.08 C44.19,104.32,44.18,103.16,44.13,102.06L44.13,102.06z M2.18,58.86C1.01,58.89,0.04,57.98,0,56.81c-0.04-1.17,0.88-2.14,2.05-2.18 l8.7-0.3c1.17-0.04,2.14,0.88,2.18,2.05c0.04,1.17-0.88,2.14-2.05,2.18L2.18,58.86L2.18,58.86z M110.68,50.25 c1.16-0.12,2.2,0.73,2.32,1.89c0.12,1.16-0.73,2.2-1.89,2.32l-8.66,0.91c-1.16,0.12-2.2-0.73-2.32-1.89 c-0.12-1.16,0.73-2.2,1.89-2.32L110.68,50.25L110.68,50.25z M94.91,14.78c0.65-0.97,1.96-1.23,2.93-0.58 c0.97,0.65,1.23,1.96,0.58,2.93l-4.84,7.24c-0.65,0.97-1.96,1.23-2.93,0.58c-0.97-0.65-1.23-1.96-0.58-2.93L94.91,14.78 L94.91,14.78z M57.63,2.06c0.03-1.17,1-2.09,2.16-2.06c1.17,0.03,2.09,1,2.06,2.16l-0.22,8.7c-0.03,1.17-1,2.09-2.16,2.06 c-1.17-0.03-2.09-1-2.06-2.16L57.63,2.06L57.63,2.06z M13.88,15.53c-0.86-0.8-0.9-2.14-0.11-2.99c0.8-0.86,2.14-0.9,2.99-0.11 l6.37,5.94c0.86,0.8,0.9,2.14,0.11,2.99c-0.8,0.86-2.14,0.9-2.99,0.11L13.88,15.53L13.88,15.53z M47.88,96.95l18.49-2.63 c1.59-6.7,5.05-10.73,8.8-15.08c3.08-3.58,6.36-7.4,8.76-13.34c1.76-4.35,2.41-8.43,2.31-12.19c-0.1-3.75-0.96-7.21-2.24-10.34 c-2.3-5.63-6.51-10.11-11.65-13.15c-4.11-2.43-8.8-3.94-13.59-4.37c-4.77-0.44-9.64,0.19-14.13,2.02 c-5.26,2.15-9.99,5.97-13.39,11.72c-2.64,5.12-3.86,10.02-3.9,14.73c-0.04,4.74,1.11,9.33,3.2,13.8c2.13,4.56,4.97,7.8,7.69,10.92 C42.47,83.9,46.48,88.49,47.88,96.95L47.88,96.95z M65.62,99.02l-17.27,2.45c0.05,1.1,0.07,2.25,0.05,3.47l17.05-2.42 C65.47,101.29,65.52,100.12,65.62,99.02L65.62,99.02z M48.49,109.52c0.12,0.92,0.3,1.76,0.53,2.54l16.55-2.04 c0.11-0.86,0.13-1.77,0.05-2.74l0,0l0-0.02l-0.01-0.17L48.49,109.52L48.49,109.52z M51.37,116.36c0.64,0.67,1.35,1.19,2.1,1.55 c1.15,0.56,2.42,0.79,3.67,0.72c1.29-0.08,2.57-0.47,3.74-1.15c1.1-0.64,2.09-1.53,2.88-2.65L51.37,116.36L51.37,116.36z"></path> </g> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Conocer las estrategias económicas más apropiadas</h5>
+                    </div>
+                </div>
+                <div class="card" id="card-mas">
+                    <svg class="card-img-top" width="128px" height="128px" viewBox="-2.1 -2.1 25.20 25.20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>plus [#1512]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-379.000000, -240.000000)" fill="#548FBD"> <g id="icons" transform="translate(56.000000, 160.000000)"> <polygon id="plus-[#1512]" points="344 89 344 91 334.55 91 334.55 100 332.45 100 332.45 91 323 91 323 89 332.45 89 332.45 80 334.55 80 334.55 89"> </polygon> </g> </g> </g> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Y mucho más</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="d-flex" id="botones">
+            <a href="#primer-seccion">
+                <img src="imagenes/flecha-arriba.svg" class="img-fluid">
+            </a>
+            <a href="#ultima-seccion">
+                <img src="imagenes/flecha-abajo.svg" class="img-fluid">
+            </a>
         </div>
+
+        <footer id="ultima-seccion">
+            <p>&copy; 2024 Caroline Sada.</p>
+            <p>Sitio web hecho por Soluciones Creativas.</p>
+        </footer>
 
         <script>
             const aForm = document.querySelector('.needs-validation')

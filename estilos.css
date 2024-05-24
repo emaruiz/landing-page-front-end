@@ -33,7 +33,6 @@ p {
     background-color: #548FBD;
     padding-top: 15px;
     padding-bottom: 46px;
-    margin-bottom: 15px;
 }
 
 h2 {
@@ -64,15 +63,48 @@ h2 {
     font-weight: 500;
 }
 
+h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#botones {
+    flex-direction: column;
+    position: fixed;
+    top: 70%;
+    right: 1%;
+    z-index: 5;
+    width: 60px;
+}
+
+a img {
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #548FBD;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
 /* Tablet */
 @media (max-width: 1200px) {
     .card {
         border-right-style: solid;
-        border-color: black;
+        border-color: #548FBD;
         border-width: 2px;
     }
     
-    #card-prediccion {
+    #card-prediccion, #card-mas {
         border-right-style: none;
     }
 
@@ -82,6 +114,11 @@ h2 {
 
     .input-group {
         width: 75%;
+    }
+
+    #botones {
+        top: 60%;
+        width: 50px;
     }
 } 
 
